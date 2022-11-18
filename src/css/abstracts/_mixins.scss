@@ -1,0 +1,25 @@
+@mixin respond($breakingpoint) {
+  @if $breakingpoint == phone-sm {
+    @media only screen and (max-width: 25.25em) {
+      @content;
+    }
+  }
+
+  @if $breakingpoint == phone-lg {
+    @media only screen and (max-width: 35em) {
+      @content;
+    }
+  }
+
+  @if $breakingpoint == tab-pot {
+    @media only screen and (max-width: 44em) {
+      @content;
+    }
+  }
+
+  @if $breakingpoint == tab-land {
+    @media only screen and (max-width: 60.5em) {
+      @content;
+    }
+  }
+}

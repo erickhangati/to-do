@@ -1,0 +1,33 @@
+.hidden {
+  display: none !important;
+}
+
+.dark-theme {
+  --very-light-gray: hsl(240, 21%, 12%) !important;
+  --white: hsl(235, 24%, 19%) !important;
+  --very-light-grayish-blue: hsl(237, 14%, 26%) !important;
+  --light-grayish-blue: hsl(233, 14%, 35%) !important;
+}
+
+.mark-complete {
+  background-image: url("/src/images/icon-check.svg"), var(--check-background) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.description-complete {
+  color: var(--light-grayish-blue) !important;
+  text-decoration: line-through !important;
+}
+
+.all-selected {
+  color: var(--purple) !important;
+}
+
+.active-selected {
+  color: var(--bright-blue) !important;
+}
+
+.complete-selected {
+  color: var(--green) !important;
+}

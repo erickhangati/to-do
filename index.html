@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+
+    <link rel="stylesheet" href="./src/css/main.scss" />
+
+    <script type="module" src="./src/js/controller.js"></script>
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <main class="app">
+      <div class="app__container">
+        <!-- Header -->
+        <div class="header">
+          <h1 class="header__heading">TODO</h1>
+          <img
+            src="/src//images/icon-moon.svg"
+            alt="Moon Icon"
+            class="header__icon"
+          />
+        </div>
+
+        <!-- Todo Input -->
+        <div class="input">
+          <div class="input__icon"></div>
+          <form class="input-form">
+            <input
+              type="text"
+              class="input-form__input"
+              placeholder="Create a new todo..."
+              style="width: 100%"
+            />
+            <button class="hidden">Submit</button>
+          </form>
+        </div>
+
+        <!-- Todo List -->
+
+        <div class="todo-container">
+          <div class="todo">
+            <div class="todo__empty">Sorry, there are no tasks for now.</div>
+
+            <!-- Todo items -->
+            <!-- 
+              <div class="todo-item">
+                <div class="todo-item__icon"></div>
+                <div class="todo-item__description">This is the new task.</div>
+                <div class="todo-item__delete"></div>
+              </div> 
+            -->
+          </div>
+
+          <!-- Footer -->
+          <div class="footer">
+            <span class="footer-item footer-item--left">0 Items Left</span>
+            <div class="footer-options">
+              <div
+                class="footer-options__item footer-options__item--all all-selected"
+              >
+                All
+              </div>
+              <div class="footer-options__item footer-options__item--active">
+                Active
+              </div>
+              <div class="footer-options__item footer-options__item--completed">
+                Completed
+              </div>
+            </div>
+            <span class="footer-item footer-item--completed"
+              >Clear Completed</span
+            >
+          </div>
+        </div>
+
+        <!-- Footer options mobile -->
+        <div class="footer-options footer-options--mobile hidden">
+          <div
+            class="footer-options__item footer-options__item--all all-selected"
+          >
+            All
+          </div>
+          <div class="footer-options__item footer-options__item--active">
+            Active
+          </div>
+          <div class="footer-options__item footer-options__item--completed">
+            Completed
+          </div>
+        </div>
+
+        <!-- Footer instructions -->
+        <span class="footer-text hidden">Drag and drop to re-order list</span>
+      </div>
+    </main>
+  </body>
+</html>
