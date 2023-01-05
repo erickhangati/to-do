@@ -24,6 +24,6 @@ You can sort the task by clicking on the option that filters active tasks and co
 2. CSS (Grid, Flexbox, SASS)
 3. Vanilla JavaScript
 
-## Live link to the QR code component
+## Live link to the Todo App
 
 [https://eric-todo-app.netlify.app/](https://eric-todo-app.netlify.app/ "Frontend Mentor Challenge - Todo App")
